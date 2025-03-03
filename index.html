@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="./src/styles/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header
+      class="fixed w-full bg-gray-800 p-4 flex justify-between items-center shadow-lg"
+    >
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Logo" class="h-10" />
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-yellow-400">Sobre mí</a></li>
+          <li>
+            <a href="#skills" class="hover:text-yellow-400">Habilidades</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-yellow-400">Proyectos</a>
+          </li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="bg-lime-300 text-gray-900 px-4 py-2 rounded-md"
+        >Contacto</a
+      >
+    </header>
+
+    <!--hero-->
+    <section
+      id="hero"
+      class="h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-gray-800 to-gray-900"
+    >
+      <h1 class="text-4xl font-bold">
+        Soy <span class="text-lime-300">Andrea Reyes</span><br />Full Stack
+        Developer
+      </h1>
+      <img src="./foto.jpg" alt="Andrea Reyes" class="h-80 mt-8" />
+      <a
+        href="#projects"
+        class="mt-4 px-6 py-3 bg-lime-300 text-gray-900 rounded-md"
+        >Mis Proyectos</a
+      >
+    </section>
+
+    <section
+      id="about"
+      class="py-16 text-center bg-cover bg-center"
+      style="background-image: url('path/to/your/background-image.jpg')"
+    >
+      <h2 class="text-3xl font-semibold text-lime-300">¿Quién soy?</h2>
+      <p class="mt-4 max-w-2xl mx-auto">
+        <strong
+          >Soy un desarrollador full-stack con 2 años de experiencia,
+          especializado en ReactJS y Node.js.</strong
+        ><br />
+        Me apasiona crear aplicaciones web eficientes y escalables, y siempre
+        estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.<br />
+        He trabajado en diversos proyectos, desde pequeñas aplicaciones hasta
+        grandes plataformas, y disfruto colaborando con equipos
+        multidisciplinarios para lograr resultados excepcionales. Además,
+        <em
+          >tengo experiencia en el uso de bases de datos como MongoDB y
+          MySQL,</em
+        >
+        y en la implementación de metodologías ágiles para la gestión de
+        proyectos. <br />Mi objetivo es seguir creciendo como profesional y
+        contribuir al éxito de los proyectos en los que participo. Me considero
+        una persona proactiva, con habilidades para resolver problemas y con una
+        gran capacidad de adaptación a nuevos entornos y tecnologías.<br />
+        En mi tiempo libre, disfruto de la lectura, la música y el desarrollo de
+        proyectos personales que me permiten seguir aprendiendo y creciendo
+        profesionalmente.
+      </p>
+      <button
+        class="mt-6 px-6 py-3 bg-lime-300 text-gray-900 rounded-md"
+        onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Mostrar Proyectos
+      </button>
+    </section>
+
+    <!--seccion skills-->
+    <section
+      class="bg-gray-900 text-white min-h-screen flex items-center justify-center"
+    >
+      <div class="text-center max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-lime-300 mb-6">MIS HABILIDADES</h2>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./html.png" alt="HTML" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./css.png" alt="CSS" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./js.png" alt="JavaScript" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./React.png" alt="React" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./nextjs.png" alt="Next.js" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./node.png" alt="Node.js" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./tailwindcss.png" alt="Tailwind CSS" />
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <img src="./mongodb.png" alt="MongoDB" />
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <div class="bg-gray-800 p-6 rounded-lg inline-block">
+            <p class="text-4xl font-bold text-white">2</p>
+            <p class="text-lg">Años de experiencia trabajando</p>
+            <br />
+            <a
+              href="./cv.pdf"
+              class="mt-4 px-4 py-2 text-lime-300 font-semibold rounded-lg border border-lime-300"
+              download
+            >
+              DESCARGAR MI CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Adicional Skills-->
+    <section
+      class="bg-gray-900 text-white min-h-screen flex items-center justify-center"
+    >
+      <div class="bg-gray-800 p-6 rounded-lg text-center">
+        <h2 class="text-xl font-bold text-lime-300 mb-4">
+          HABILIDADES ADICIONALES
+        </h2>
+
+        <div class="flex gap-6 justify-center items-center">
+          <img src="bootstrap-logo.png" alt="Bootstrap" class="h-10" />
+          <img src="axios-logo.png" alt="Axios" class="h-10" />
+          <img src="redux-logo.png" alt="Redux" class="h-10" />
+          <img src="mui-logo.png" alt="Material UI" class="h-10" />
+          <img src="firebase-logo.png" alt="Firebase" class="h-10" />
+          <img src="wordpress-logo.png" alt="WordPress" class="h-10" />
+          <img src="motion-logo.png" alt="Framer Motion" class="h-10" />
+        </div>
+      </div>
+    </section>
+
+    <!--Prouyectos destacados-->
+
+    <section
+      class="bg-gray-900 text-white min-h-screen flex items-center justify-center"
+    >
+      <div class="flex flex-col md:flex-row items-center gap-8 p-6">
+        <!-- Texto -->
+        <div class="max-w-md">
+          <h2 class="text-3xl font-bold mb-6">
+            LOS TRABAJOS MÁS CERCANOS A MI CORAZÓN
+          </h2>
+          <button
+            class="mt-4 px-6 py-3 bg-lime-400 text-black font-semibold rounded-full"
+          >
+            MOSTRAR MIS PROYECTOS
+          </button>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <div class="flex gap-4">
+          <div
+            class="relative w-32 h-52 bg-gray-700 rounded-xl overflow-hidden"
+          >
+            <img
+              src="project1.jpg"
+              alt="Plumbing Company"
+              class="w-full h-full object-cover"
+            />
+            <p class="absolute bottom-2 left-2 text-white font-bold text-sm">
+              Plumbing Company
+            </p>
+          </div>
+          <div class="w-20 h-52 bg-gray-700 rounded-xl overflow-hidden">
+            <img
+              src="project2.jpg"
+              alt="Project 2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="w-20 h-52 bg-gray-700 rounded-xl overflow-hidden">
+            <img
+              src="project3.jpg"
+              alt="Project 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Formulario de Contacto-->
+    <section id="contact" class="py-16 text-center">
+      <h2 class="text-3xl font-semibold">¡Contáctame!</h2>
+      <form class="max-w-lg mx-auto mt-6 space-y-4">
+        <input
+          type="text"
+          placeholder="Tu Nombre"
+          class="w-full p-3 rounded-md bg-gray-800 border border-gray-600"
+        />
+        <input
+          type="email"
+          placeholder="Tu Correo"
+          class="w-full p-3 rounded-md bg-gray-800 border border-gray-600"
+        />
+        <textarea
+          placeholder="Tu Mensaje"
+          class="w-full p-3 rounded-md bg-gray-800 border border-gray-600"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full bg-lime-300 text-gray-900 p-3 rounded-md"
+        >
+          Enviar
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
