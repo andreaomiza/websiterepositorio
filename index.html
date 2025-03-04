@@ -11,7 +11,7 @@
       class="fixed w-full bg-gray-800 p-4 flex justify-between items-center shadow-lg"
     >
       <div class="flex items-center space-x-4">
-        <img src="logo.png" alt="Logo" class="h-10" />
+        <img src="./src/images/logo.png" alt="Logo" class="h-10" />
       </div>
       <nav>
         <ul class="flex space-x-6">
@@ -39,7 +39,7 @@
         Soy <span class="text-lime-300">Andrea Reyes</span><br />Full Stack
         Developer
       </h1>
-      <img src="./foto.jpg" alt="Andrea Reyes" class="h-80 mt-8" />
+      <img src="./src/images/foto.jpg" alt="Andrea Reyes" class="h-80 mt-8" />
       <a
         href="#projects"
         class="mt-4 px-6 py-3 bg-lime-300 text-gray-900 rounded-md"
@@ -52,6 +52,7 @@
       class="py-16 text-center bg-cover bg-center"
       style="background-image: url('path/to/your/background-image.jpg')"
     >
+      <!--imagen de background-->
       <h2 class="text-3xl font-semibold text-lime-300">¿Quién soy?</h2>
       <p class="mt-4 max-w-2xl mx-auto">
         <strong
@@ -77,6 +78,8 @@
         profesionalmente.
       </p>
       <button
+        a
+        href="#projects"
         class="mt-6 px-6 py-3 bg-lime-300 text-gray-900 rounded-md"
         onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });"
       >
@@ -94,28 +97,28 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./html.png" alt="HTML" />
+            <img src="./src/images/html.png" alt="HTML" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./css.png" alt="CSS" />
+            <img src="./src/images/css.png" alt="CSS" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./js.png" alt="JavaScript" />
+            <img src="./src/images/js.png" alt="JavaScript" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./React.png" alt="React" />
+            <img src="./src/images/React.png" alt="React" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./nextjs.png" alt="Next.js" />
+            <img src="./src/images/nextjs.png" alt="Next.js" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./node.png" alt="Node.js" />
+            <img src="./src/images/nodejs.png" alt="Node.js" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./tailwindcss.png" alt="Tailwind CSS" />
+            <img src="./src/images/tailwindcss.png" alt="Tailwind CSS" />
           </div>
           <div class="bg-gray-800 p-3 rounded-lg">
-            <img src="./mongodb.png" alt="MongoDB" />
+            <img src="./src/images/mongodb.png" alt="MongoDB" />
           </div>
         </div>
 
@@ -125,7 +128,7 @@
             <p class="text-lg">Años de experiencia trabajando</p>
             <br />
             <a
-              href="./cv.pdf"
+              href="./src/images/cv.pdf"
               class="mt-4 px-4 py-2 text-lime-300 font-semibold rounded-lg border border-lime-300"
               download
             >
@@ -146,18 +149,26 @@
         </h2>
 
         <div class="flex gap-6 justify-center items-center">
-          <img src="./Bootstrap.png" alt="Bootstrap" class="h-10" />
-          <img src="./Axios.png" alt="Axios" class="h-10" />
-          <img src="./redux.png" alt="Redux" class="h-10" />
-          <img src="./materialui.png" alt="Material UI" class="h-10" />
-          <img src="./firebase.png" alt="Firebase" class="h-10" />
-          <img src="./WordPress.png" alt="WordPress" class="h-10" />
-          <img src="./Framer-Motion.png" alt="Framer Motion" class="h-10" />
+          <img src="./src/images/Bootstrap.png" alt="Bootstrap" class="h-10" />
+          <img src="./src/images/Axios.png" alt="Axios" class="h-10" />
+          <img src="./src/images/redux.png" alt="Redux" class="h-10" />
+          <img
+            src="./src/images/materialui.png"
+            alt="Material UI"
+            class="h-10"
+          />
+          <img src="./src/images/firebase.png" alt="Firebase" class="h-10" />
+          <img src="./src/images/WordPress.png" alt="WordPress" class="h-10" />
+          <img
+            src="./src/images/Framer-Motion.png"
+            alt="Framer Motion"
+            class="h-10"
+          />
         </div>
       </div>
     </section>
 
-    <!--Prouyectos destacados-->
+    <!--Proyectos destacados-->
 
     <section
       id="projects"
@@ -169,26 +180,23 @@
           <h2 class="text-3xl font-bold mb-6">
             LOS TRABAJOS MÁS CERCANOS A MI CORAZÓN
           </h2>
-          <button
+          <a
+            href="https://github.com/andreaomiza"
             class="mt-4 px-6 py-3 bg-lime-400 text-black font-semibold rounded-full"
           >
             MOSTRAR MIS PROYECTOS
-          </button>
+          </a>
         </div>
 
         <!-- Galería de imágenes -->
         <div class="flex gap-4">
-          <div
-            class="relative w-32 h-52 bg-gray-700 rounded-xl overflow-hidden"
-          >
+          <div class="w-20 h-52 bg-gray-700 rounded-xl overflow-hidden">
             <img
               src="project1.jpg"
               alt="Plumbing Company"
               class="w-full h-full object-cover"
             />
-            <p class="absolute bottom-2 left-2 text-white font-bold text-sm">
-              Plumbing Company
-            </p>
+            <p>Plumbing Company</p>
           </div>
           <div class="w-20 h-52 bg-gray-700 rounded-xl overflow-hidden">
             <img
@@ -211,7 +219,7 @@
     <!--Formulario de Contacto-->
     <section id="contact" class="py-16 text-center">
       <h2 class="text-3xl font-semibold">¡Contáctame!</h2>
-      <form class="max-w-lg mx-auto mt-6 space-y-4">
+      <form class="max-w-lg mx-auto mt-6 space-y-4 p-6">
         <input
           type="text"
           placeholder="Tu Nombre"
